@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "name": "outputBlob",
+      "type": "blob",
+      "direction": "out",
+      "connection": "StorageConnectionString",
+      "path": "savedrequests/{blobInfo.id}_{blobInfo.name}-{DateTime}.txt"
+    }
+  ]
+}

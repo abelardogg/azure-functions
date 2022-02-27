@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "myInputBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "input-data/{name}",
+      "connection":"StorageConnectionString"
+    },
+    {
+      "name": "myOutputBlob",
+      "type": "blob",
+      "path": "output-data/{name}",
+      "connection": "StorageConnectionString",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
+
