@@ -8,7 +8,9 @@ module.exports = async function(context) {
 
     context.log('Node.js Blob trigger function processed', data);
 
-    const HTMLtemplate = await templates.getTemplate('user-card');
+    // const HTMLtemplate = await templates.getTemplate('user-card');
+    const HTMLtemplate = await templates.getHttpTemplate('template');
+
     let doTTemplate = doT.template(HTMLtemplate);
     const result = doTTemplate(data);
 

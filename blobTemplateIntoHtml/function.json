@@ -4,7 +4,7 @@
       "name": "inputBlob",
       "type": "blobTrigger",
       "direction": "in",
-      "path": "input-data/{name}",
+      "path": "input-data/data/{name}",
       "connection":"StorageConnectionString"
     },
     {
